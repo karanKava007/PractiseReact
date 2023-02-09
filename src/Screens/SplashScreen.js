@@ -7,13 +7,13 @@ export default function SplashScreen() {
         //LinearGradient Part
         <LinearGradient colors={['#ACBDFA', '#194AF9']} style={styles.container}>
             {/* Logo Section */}
-            <View>
+            <View style={styles.logoSection}>
             <Image source={require('../Images/logo.png')} />
             </View>
             {/* Button Section */}
-            <View>
-                <TouchableOpacity>
-                    <Text>Click</Text>
+            <View style={styles.buttonSection}>
+                <TouchableOpacity style={styles.button}>
+                    <Text style={styles.btnText}>Get Started</Text>
                 </TouchableOpacity>
             </View>
 
@@ -23,5 +23,29 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
     container:{
         flex:1,
+    },
+    btnText:{
+        color:'#194AF9',
+        fontWeight:800,
+    },
+    logoSection:{
+        backgroundColor:null,
+        flex:4,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    buttonSection:{
+        flex:1,
+        backgroundColor:null,
+        justifyContent:'center',
+    },
+    button:{
+        backgroundColor:'white',
+        alignItems:'center',
+        paddingHorizontal:30,
+        paddingVertical:20,
+        borderRadius:90,
+        marginHorizontal:25,
+
     }
 })
