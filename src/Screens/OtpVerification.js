@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
     },
     imgHeigth:{
         width:40,
-        height:55,
+        height:50,
         borderRadius:100,
         alignSelf:'center'
     }
