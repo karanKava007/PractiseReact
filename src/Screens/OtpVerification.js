@@ -48,16 +48,16 @@ const styles = StyleSheet.create({
     },
     MainInfo: {
         flex: 2,
-        backgroundColor: null,
+        backgroundColor: 'white',
         paddingVertical: 30,
     },
     blankBoard: {
         flex: 1,
-        backgroundColor: null,
+        backgroundColor: 'white',
     },
     privecyLink: {
         flex: 1,
-        backgroundColor: null,
+        backgroundColor: 'white',
         alignItems: 'center',
         justifyContent: 'flex-end',
     },
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     row: {
         flexDirection: 'row',
         marginVertical: 30,
-        backgroundColor: null,
+        backgroundColor: 'white',
         marginHorizontal: 20,
         alignItems: 'center',
         flex: 3,

@@ -26,12 +26,12 @@ export default function OtpReg() {
 const styles = StyleSheet.create({
     Content: {
         flex: 4,
-        backgroundColor: null,
+        backgroundColor: 'white',
         padding: 10,
     },
     Blank: {
         flex: 2,
-        backgroundColor: null,
+        backgroundColor: 'white',
     },
     fullFlex: {
         flex: 1,
