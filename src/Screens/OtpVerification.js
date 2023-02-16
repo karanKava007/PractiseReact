@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'reac
 import React from 'react'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-export default function OtpVerification() {
+export default function OtpVerification({navigation}) {
     //<Text><MaterialIcons name='home' size={50}/></Text>
     return (
         <View style={styles.mainContainer}>
@@ -19,7 +19,9 @@ export default function OtpVerification() {
                 </View>
                 <View style={styles.buttonSection}>
                     <TouchableOpacity style={styles.button}>
-                        <Text style={styles.buttonText}>
+                        <Text
+                        onPress={()=> navigation.navigate('otpReg')}
+                        style={styles.buttonText}>
                             Next
                         </Text>
                     </TouchableOpacity>
