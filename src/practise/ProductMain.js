@@ -1,7 +1,7 @@
 import { View, Text, Button, StyleSheet, TouchableOpacity, Alert } from 'react-native'
 import React from 'react'
 
-export default function productMain({ navigation }) {
+export default function ProductMain({ navigation }) {
   return (
     <View style={styles.fullFlex}>
       <TouchableOpacity
