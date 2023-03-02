@@ -1,16 +1,21 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { ProductStack } from './src/routes/StackNavigation';
-import { TabNavigatorStack } from './src/routes/DrawNavigator';
+import { Provider } from 'react-redux';
+import Counter from './src/container/Counter';
+import Post from './src/post/Post';
+import { configStore } from './src/redux/Store';
 
 function App(): JSX.Element {
-
+  const storeData = configStore();
   return (
     <>
-      <NavigationContainer>
-        {/* <ProductStack /> */}
+      {/* <NavigationContainer>
+        <ProductStack />
         <TabNavigatorStack />
-      </NavigationContainer>
+      </NavigationContainer> */}
+
+      <Provider store={storeData}>
+        <Post />
+      </Provider>
     </>
   );
 }
