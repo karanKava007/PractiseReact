@@ -28,6 +28,7 @@ const Post = () => {
     return (
        <SafeAreaView>
          <ScrollView>
+            <Text>Hello React</Text>
             <TextInput
                 style={styles.input}
                 onChangeText={setId}
