@@ -16,7 +16,12 @@ export const postReducer = (state = initialState, action) => {
             return{
                 ...state , 
                 post:state.post.concat(action.payload)
-            };
+            }
+        case ActionTypes.DELETE_METHODE:
+            return{
+                ...state , 
+                post:state.post.filter((item)=>item.id !== action.payload)
+            }
         default:
             return state
     }

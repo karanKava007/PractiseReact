@@ -27,3 +27,14 @@ export const addPost = (data) => (dispatch) => {
 
     }
 }
+export const deleteApiData = (id) => (dispatch) => {
+    try {
+        fetch('https://jsonplaceholder.typicode.com/posts' + id, {
+            method: 'DELETE'
+        })
+            .then(dispatch({ type: ActionTypes.DELETE_METHODE, payload: id }))
+
+    } catch (error) {
+
+    }
+}
